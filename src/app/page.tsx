@@ -20,7 +20,7 @@ export default function Home() {
           <img
             src="/logo_cambridge.jpg"
             alt="Cambridge Logo"
-            className="h-8 md:h-10 w-auto object-contain rounded-md bg-white p-1"
+            className="h-12 md:h-16 w-auto object-contain rounded-md bg-white p-1"
           />
           <p className="text-white text-base md:text-lg lg:text-xl font-medium tracking-wide font-poppins drop-shadow-sm">
             Palghar’s Gateway to Cambridge International Education
