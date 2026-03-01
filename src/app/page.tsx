@@ -9,6 +9,13 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col pt-[72px] lg:pt-[88px]">
+      {/* Promotional Banner */}
+      <div className="bg-gradient-to-r from-[#0A2351] to-[#0077B6] py-4 px-6 text-center shadow-inner">
+        <p className="text-white text-lg md:text-xl font-medium tracking-wide font-poppins drop-shadow-sm">
+          Palghar’s Gateway to Cambridge International Education
+        </p>
+      </div>
+
       {/* Hero Carousel */}
       <HeroCarousel />
 

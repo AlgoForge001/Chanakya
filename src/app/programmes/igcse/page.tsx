@@ -34,7 +34,7 @@ export default function IgcsePage() {
                                 A comprehensive curriculum equipping learners for excellence at the world's leading colleges and universities.
                             </p>
                             <Link
-                                href="/apply"
+                                href="/contact-us"
                                 className="inline-flex items-center bg-[#F2AE40] hover:bg-white hover:text-[#0A2351] text-[#0A2351] px-8 py-4 rounded-full text-lg font-bold transition-all shadow-2xl hover:scale-105 active:scale-95 group"
                             >
                                 Apply for Excellence
@@ -203,7 +203,7 @@ export default function IgcsePage() {
                         Empower Their Future
                     </h2>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link href="/apply" className="w-full sm:w-auto bg-[#0A2351] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
+                        <Link href="/contact-us" className="w-full sm:w-auto bg-[#0A2351] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
                             Start Admission
                         </Link>
                         <Link href="/contact" className="w-full sm:w-auto bg-white text-[#0A2351] px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-slate-50 transition-all">

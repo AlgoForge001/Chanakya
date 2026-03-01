@@ -34,7 +34,7 @@ const classesData = [
 
 const ClassesSection = () => {
     return (
-        <section className="relative py-24 bg-white overflow-hidden">
+        <section className="relative pt-32 pb-24 lg:py-24 bg-white overflow-hidden">
             {/* Decorative Background Elements */}
             <div className="hidden md:block absolute top-[5%] right-[-10%] w-[400px] h-[400px] bg-[#5B5FC7] rounded-full opacity-[0.05] z-0" />
             <div className="hidden md:block absolute bottom-[-5%] left-[-5%] w-[300px] h-[300px] bg-slate-200 rounded-full opacity-[0.08] z-0" />

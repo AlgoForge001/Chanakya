@@ -43,7 +43,7 @@ export default function PrimaryPage() {
                                 Igniting the spark of curiosity in young minds through an immersive, dynamic, and hands-on learning environment.
                             </p>
                             <Link
-                                href="/apply"
+                                href="/contact-us"
                                 className="inline-flex items-center bg-[#5B5FC7] hover:bg-white hover:text-[#0A2351] text-white px-8 py-4 rounded-full text-lg font-bold transition-all shadow-2xl hover:scale-105 active:scale-95 group"
                             >
                                 Start the Journey
@@ -183,7 +183,7 @@ export default function PrimaryPage() {
                         Ready for Excellence?
                     </h2>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link href="/apply" className="w-full sm:w-auto bg-[#5B5FC7] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
+                        <Link href="/contact-us" className="w-full sm:w-auto bg-[#5B5FC7] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
                             Apply Today
                         </Link>
                         <Link href="/contact" className="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-white hover:text-[#0A2351] transition-all">

@@ -244,7 +244,7 @@ export default function ContactUsPage() {
                         Looking for Admissions?
                     </h2>
                     <Link
-                        href="/apply"
+                        href="/contact-us"
                         className="inline-flex items-center bg-[#0077B6] hover:bg-white hover:text-[#0A2351] text-white px-10 py-4 rounded-full text-xl font-bold transition-all shadow-2xl border border-white/10 group font-poppins"
                     >
                         Begin the Process

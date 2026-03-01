@@ -67,8 +67,8 @@ const CultureSection = () => {
                 </div>
 
                 {/* Mobile: Glassmorphism Gradient Transition */}
-                <div className="block md:hidden relative w-full h-24 pointer-events-none">
-                    <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent opacity-90" />
+                <div className="block md:hidden relative w-full h-32 pointer-events-none -mb-16">
+                    <div className="absolute inset-0 bg-gradient-to-t from-white via-white/90 to-transparent" />
                     <div className="absolute inset-0 backdrop-blur-md bg-white/5" />
                 </div>
             </div>

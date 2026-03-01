@@ -85,8 +85,8 @@ const FacilitiesSection = () => {
                 </div>
 
                 {/* Mobile: Glassmorphism Gradient transition */}
-                <div className="block md:hidden relative w-full h-24 -mt-12 pointer-events-none">
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#4F56C0] to-transparent opacity-90" />
+                <div className="block md:hidden relative w-full h-32 -mt-16 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#4F56C0] via-white/80 to-white" />
                     <div className="absolute inset-0 backdrop-blur-md bg-white/5" />
                     <div className="absolute bottom-0 left-0 w-full h-px bg-white/10" />
                 </div>

@@ -57,8 +57,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-[#0077B6] rounded-xl flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-110 border border-white/20">
-              <GraduationCap size={24} />
+            <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-lg transition-transform group-hover:scale-110 border border-white/20">
+              <img src="/school_logo.jpg" alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-white leading-none">
@@ -114,7 +114,7 @@ const Navbar = () => {
             {/* CTA Button */}
             <div className="flex items-center space-x-4">
               <Link
-                href="/apply"
+                href="/contact-us"
                 className="bg-[#0077B6] hover:bg-white hover:text-[#0A2351] text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-md hover:shadow-lg flex items-center group border border-white/10"
               >
                 Apply Now
@@ -199,7 +199,7 @@ const Navbar = () => {
 
           <div className="space-y-4 pt-4">
             <Link
-              href="/apply"
+              href="/contact-us"
               onClick={() => setIsOpen(false)}
               className="w-full bg-[#0077B6] text-white px-6 py-4 rounded-2xl text-center font-bold shadow-md active:scale-95 transition-all block"
             >

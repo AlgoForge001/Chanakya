@@ -43,7 +43,7 @@ export default function SecondaryPage() {
                                 Empowering students to cultivate their own learning strategies and discover their individual strengths during a critical developmental stage.
                             </p>
                             <Link
-                                href="/apply"
+                                href="/contact-us"
                                 className="inline-flex items-center bg-[#0077B6] hover:bg-white hover:text-[#0A2351] text-white px-8 py-4 rounded-full text-lg font-bold transition-all shadow-2xl hover:scale-105 active:scale-95 group"
                             >
                                 Secure a Bright Future
@@ -188,7 +188,7 @@ export default function SecondaryPage() {
                         Ready to Join the Journey?
                     </h2>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link href="/apply" className="w-full sm:w-auto bg-white text-[#5B5FC7] px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
+                        <Link href="/contact-us" className="w-full sm:w-auto bg-white text-[#5B5FC7] px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
                             Apply for Admission
                         </Link>
                         <Link href="/contact" className="w-full sm:w-auto bg-[#0A2351] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">

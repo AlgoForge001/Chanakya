@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
+
     {
         image: '/14072022012942_0_456814_Chanakya-The-Global-School-For-Intellectuals-Palghar-(1).jpg',
         title: 'World Class Infrastructure',

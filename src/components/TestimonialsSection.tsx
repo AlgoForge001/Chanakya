@@ -158,7 +158,7 @@ const TestimonialsSection = () => {
     };
 
     return (
-        <section className="relative py-24 bg-[#FAFAFA] overflow-hidden">
+        <section className="relative py-12 md:py-24 bg-[#FAFAFA] overflow-hidden">
             {/* Grid Background Pattern */}
             <div className="absolute inset-0 z-0 opacity-[0.03]"
                 style={{
@@ -217,7 +217,7 @@ const TestimonialsSection = () => {
                     ))}
                 </div>
 
-                <hr className="border-slate-200 mb-20" />
+                <hr className="border-slate-200 mb-10 md:mb-20" />
 
                 {/* Feedback Form Section */}
                 <div className="text-center mb-16">
@@ -226,7 +226,7 @@ const TestimonialsSection = () => {
                     </h2>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-16 lg:items-stretch">
+                <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 lg:items-stretch">
 
                     {/* Feedback Form (Left Side) */}
                     <div className="w-full lg:w-1/2">
@@ -320,9 +320,8 @@ const TestimonialsSection = () => {
                         </div>
                     </div>
 
-                    {/* Image (Right Side) */}
                     <div className="w-full lg:w-1/2">
-                        <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="relative h-full min-h-[300px] md:min-h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                             <img
                                 src="/appointment.jpg"
                                 alt="Appointment"
