@@ -6,15 +6,21 @@ import ClassesSection from '@/components/ClassesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import Link from 'next/link';
 
+import { ChevronRight } from 'lucide-react';
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col pt-[72px] lg:pt-[88px]">
       {/* Promotional Banner */}
-      <div className="bg-gradient-to-r from-[#0A2351] to-[#0077B6] py-4 px-6 text-center shadow-inner">
+      <Link
+        href="/contact-us"
+        className="bg-gradient-to-r from-[#0A2351] to-[#0077B6] py-4 px-6 text-center shadow-inner hover:brightness-110 transition-all cursor-pointer group flex items-center justify-center space-x-2"
+      >
         <p className="text-white text-lg md:text-xl font-medium tracking-wide font-poppins drop-shadow-sm">
           Palghar’s Gateway to Cambridge International Education
         </p>
-      </div>
+        <ChevronRight className="text-white w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      </Link>
 
       {/* Hero Carousel */}
       <HeroCarousel />

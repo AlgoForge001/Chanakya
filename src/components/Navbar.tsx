@@ -139,14 +139,23 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center">
+          {/* Mobile Menu Button & Call Icon */}
+          <div className="lg:hidden flex items-center space-x-1">
+            <a href="tel:+919730390599" className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors" title="Call Us">
+              <Phone size={20} />
+            </a>
+            <a href="https://wa.me/919730390599" target="_blank" rel="noopener noreferrer" className="p-2 text-white/70 hover:text-[#25D366] hover:bg-white/10 rounded-lg transition-all" title="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.004 2C6.48 2 2.004 6.48 2.004 12c0 1.91.53 3.69 1.45 5.23L2.004 22l4.89-1.42c1.47.88 3.19 1.42 5.11 1.42 5.52 0 10-4.48 10-10S17.524 2 12.004 2zm5.75 14.15c-.24.68-1.4 1.25-1.92 1.33-.49.07-1.12.1-3.23-.77-2.7-1.11-4.44-3.83-4.57-4.01-.14-.18-1.11-1.48-1.11-2.81 0-1.33.68-1.99.93-2.25.21-.21.54-.3.8-.3.08 0 .15 0 .22.01.2.01.35.02.5.38.19.46.65 1.58.7 1.7.06.12.1.26.02.42-.08.16-.12.26-.24.41-.12.14-.26.32-.37.43-.12.12-.25.26-.11.5.14.24.63 1.03 1.34 1.67.92.82 1.7 1.07 1.94 1.19.24.12.38.1.51-.04.14-.15.58-.68.74-.91.16-.24.32-.2.54-.12.22.08 1.41.67 1.65.79.24.12.4.18.46.28.06.1.06.57-.18 1.25z" /></svg>
+            </a>
+            <a href="https://www.instagram.com/chhanakyaschool" target="_blank" rel="noopener noreferrer" className="p-2 text-white/70 hover:text-[#E4405F] hover:bg-white/10 rounded-lg transition-all" title="Instagram">
+              <Instagram size={20} />
+            </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              {isOpen ? <X size={26} /> : <Menu size={26} />}
             </button>
           </div>
         </div>
