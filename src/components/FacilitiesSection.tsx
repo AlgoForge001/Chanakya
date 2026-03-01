@@ -66,20 +66,30 @@ const FacilitiesSection = () => {
                 </p>
             </div>
 
-            {/* Sawtooth Separator */}
-            <div className="w-full h-12 relative -mt-0.5 z-10">
-                <svg
-                    viewBox="0 0 1440 48"
-                    className="absolute top-0 w-full h-full"
-                    preserveAspectRatio="none"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M0 0L48 48L96 0L144 48L192 0L240 48L288 0L336 48L384 0L432 48L480 0L528 48L576 0L624 48L672 0L720 48L768 0L816 48L864 0L912 48L960 0L1008 48L1056 0L1104 48L1152 0L1200 48L1248 0L1296 48L1344 0L1392 48L1440 0V0H0Z"
-                        fill="#4F56C0"
-                    />
-                </svg>
+            {/* Hybrid Transition: Desktop Triangles / Mobile Glassmorphism */}
+            <div className="relative w-full z-20">
+                {/* Desktop: Sawtooth Separator */}
+                <div className="hidden md:block w-full h-12 relative -mt-0.5 overflow-hidden">
+                    <svg
+                        viewBox="0 0 1440 48"
+                        className="absolute top-0 w-full h-full"
+                        preserveAspectRatio="none"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M0 0L48 48L96 0L144 48L192 0L240 48L288 0L336 48L384 0L432 48L480 0L528 48L576 0L624 48L672 0L720 48L768 0L816 48L864 0L912 48L960 0L1008 48L1056 0L1104 48L1152 0L1200 48L1248 0L1296 48L1344 0L1392 48L1440 0V0H0Z"
+                            fill="#4F56C0"
+                        />
+                    </svg>
+                </div>
+
+                {/* Mobile: Glassmorphism Gradient transition */}
+                <div className="block md:hidden relative w-full h-24 -mt-12 pointer-events-none">
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#4F56C0] to-transparent opacity-90" />
+                    <div className="absolute inset-0 backdrop-blur-md bg-white/5" />
+                    <div className="absolute bottom-0 left-0 w-full h-px bg-white/10" />
+                </div>
             </div>
 
             {/* Content Grid */}
