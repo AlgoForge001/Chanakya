@@ -70,14 +70,22 @@ const Footer = () => {
                             <span className="absolute -bottom-2 left-0 w-12 h-1 bg-emerald-600 rounded-full" />
                         </h3>
                         <ul className="space-y-3">
-                            {['Home', 'About Us', 'Academics', 'Admissions', 'Contact Us'].map((item) => (
-                                <li key={item}>
+                            {[
+                                { name: 'Home', href: '/' },
+                                { name: 'About', href: '/about-chanakya' },
+                                { name: 'Our Programmes', href: '/programmes' },
+                                { name: 'Events', href: '/events' },
+                                { name: 'Campuses', href: '/campuses' },
+                                { name: 'Career', href: '/career' },
+                                { name: 'Contact Us', href: '/contact-us' }
+                            ].map((item) => (
+                                <li key={item.name}>
                                     <Link
-                                        href={`/${item.toLowerCase().replace(' ', '-')}`}
+                                        href={item.href}
                                         className="text-slate-400 hover:text-white hover:translate-x-1 transition-all flex items-center group text-sm"
                                     >
                                         <ArrowRight className="w-3 h-3 mr-2 text-emerald-600 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                        {item}
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
