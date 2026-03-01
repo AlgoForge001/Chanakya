@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SocialBubbles from "@/components/SocialBubbles";
+import Preloader from "@/components/Preloader";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -36,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${inter.variable} ${outfit.variable} font-sans antialiased`}
       >
+        <Preloader />
         <Navbar />
         {children}
         <Footer />
