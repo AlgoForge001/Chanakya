@@ -139,7 +139,7 @@ export default function CareerPage() {
                                 <div className="absolute inset-0 bg-blue-100 rounded-[60px] rotate-3" />
                                 <div className="relative w-full h-full rounded-[60px] overflow-hidden border-[12px] border-white shadow-2xl">
                                     <Image
-                                        src="/about-students.jpg" // Fallback to existing
+                                        src="/international.jpg"
                                         alt="International Educators"
                                         fill
                                         className="object-cover"
@@ -172,27 +172,11 @@ export default function CareerPage() {
                 <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#0077B6] rounded-full translate-x-1/2 -translate-y-1/2 opacity-10 blur-[150px]" />
 
                 <div className="max-w-4xl mx-auto text-center relative z-10">
-                    <h2 className="text-4xl md:text-6xl font-black text-white mb-8 font-poppins leading-tight">
-                        Ready to Shape the Future?
-                    </h2>
+
                     <p className="text-xl text-blue-100/70 font-inter leading-relaxed mb-12">
                         Submit your profile and join a network of pioneering educators at one of India's most prestigious international schools.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link
-                            href="mailto:careers@chanakyaschool.com"
-                            className="w-full sm:w-auto bg-[#0077B6] hover:bg-white hover:text-[#0077B6] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl transition-all flex items-center justify-center gap-3 group"
-                        >
-                            <Mail className="group-hover:scale-110 transition-transform" />
-                            Email Your CV
-                        </Link>
-                        <Link
-                            href="/contact-us"
-                            className="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-white hover:text-[#0A2351] transition-all"
-                        >
-                            Inquire Now
-                        </Link>
-                    </div>
+
                     <p className="mt-12 text-blue-100/40 text-sm font-medium">
                         Chanakya The Global School for Intellectuals is an Equal Opportunity Employer.
                     </p>

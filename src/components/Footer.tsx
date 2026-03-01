@@ -93,19 +93,32 @@ const Footer = () => {
                         <div className="space-y-4">
                             <div className="flex items-start space-x-3 group">
                                 <MapPin className="w-5 h-5 text-emerald-500 mt-1 flex-shrink-0" />
-                                <span className="text-slate-400 text-sm font-inter">Near Chanakya Circle, Sector 4, Bangalore</span>
+                                <span className="text-slate-400 text-sm font-inter">
+                                    Shirgaon, New Satpati Road,<br />
+                                    Palghar (W) 401404, Maharashtra
+                                </span>
                             </div>
-                            <div className="flex items-center space-x-3 group">
-                                <Phone className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                                <span className="text-slate-400 text-sm font-inter">+91 98765 43210</span>
+                            <div className="flex flex-col space-y-2">
+                                <div className="flex items-center space-x-3 group">
+                                    <Phone className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                                    <div className="flex flex-col">
+                                        <span className="text-slate-400 text-sm font-inter">+91 9730390599</span>
+                                        <span className="text-slate-400 text-sm font-inter">+91 9730990599</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="flex items-center space-x-3 group">
-                                <Mail className="w-5 h-5 text-emerald-500 flex-shrink-0" />
-                                <span className="text-slate-400 text-sm font-inter underline">contact@chanakya.school</span>
+                            <div className="flex flex-col space-y-2">
+                                <div className="flex items-center space-x-3 group">
+                                    <Mail className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                                    <div className="flex flex-col">
+                                        <span className="text-slate-400 text-sm font-inter underline">chanakyatheglobalschool@gmail.com</span>
+                                        <span className="text-slate-400 text-sm font-inter underline">info@chanakyatheglobalschool.com</span>
+                                    </div>
+                                </div>
                             </div>
                             <div className="flex items-center space-x-3 group text-emerald-500/80">
                                 <Clock className="w-5 h-5 flex-shrink-0" />
-                                <span className="text-xs font-bold uppercase tracking-wider">Mon - Sat: 8:00 AM - 4:00 PM</span>
+                                <span className="text-xs font-bold uppercase tracking-wider">Mon - Sat: 9:00 AM - 5:00 PM</span>
                             </div>
                         </div>
                     </div>

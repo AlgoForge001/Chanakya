@@ -9,7 +9,7 @@ const eventCards = [
         title: "Annual Day Extravaganza",
         date: "December 20, 2025",
         description: "A grand celebration of talent and culture. Our students take to the stage with breathtaking performances in dance, drama, and music, showcasing the vibrant spirit of Chanakya.",
-        image: "/assets/events/annual_day.png",
+        image: "/annual.jpg",
         icon: <PartyPopper className="w-8 h-8" />,
         color: "bg-red-500",
     },
@@ -17,7 +17,7 @@ const eventCards = [
         title: "Annual Sports Meet",
         date: "January 15, 2026",
         description: "A day of energy and competition. From high-speed sprints to collaborative relay races, our students demonstrate their athletic prowess and sportsmanship on the professional track.",
-        image: "/assets/events/sports_meet.png",
+        image: "/annual_sports_meet.jpg",
         icon: <Trophy className="w-8 h-8" />,
         color: "bg-blue-600",
     },
@@ -25,7 +25,7 @@ const eventCards = [
         title: "Science & Innovation Fair",
         date: "February 28, 2026",
         description: "Curiosity takes flight! An interactive exhibition where young scientists present their innovative projects and experiments, bridging the gap between theory and practical innovation.",
-        image: "/assets/events/science_exhibition.png",
+        image: "/aci_innovation.jpg",
         icon: <Microscope className="w-8 h-8" />,
         color: "bg-emerald-600",
     }
@@ -90,12 +90,7 @@ export default function EventsPage() {
                                 <p className="text-lg text-slate-500 font-inter leading-relaxed">
                                     {event.description}
                                 </p>
-                                <div className="pt-4">
-                                    <button className="bg-brand-blue text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-brand-lime transition-all flex items-center gap-2 group/btn font-poppins">
-                                        View Gallery
-                                        <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-                                    </button>
-                                </div>
+
                             </div>
                         </div>
                     ))}

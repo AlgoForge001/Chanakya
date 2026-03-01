@@ -117,12 +117,7 @@ export default function CampusesPage() {
                 </div>
 
                 {/* Footer Link */}
-                <div className="mt-20 text-center">
-                    <button className="inline-flex items-center gap-2 group px-8 py-4 bg-slate-900 text-white rounded-full font-bold text-sm hover:bg-slate-800 transition-all shadow-xl">
-                        Explore Full Campus Map
-                        <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                    </button>
-                </div>
+
             </div>
         </main>
     );

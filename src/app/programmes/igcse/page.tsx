@@ -47,7 +47,7 @@ export default function IgcsePage() {
                                 <div className="absolute inset-0 bg-[#E6C1BC] rounded-[60px] md:rounded-[80px] -rotate-3 opacity-20 scale-105" />
                                 <div className="relative w-full h-full rounded-[60px] md:rounded-[80px] overflow-hidden border-[12px] border-white/10 shadow-3xl bg-slate-900">
                                     <Image
-                                        src="/igcse.png"
+                                        src="/appointment.jpg"
                                         alt="Cambridge IGCSE Students"
                                         fill
                                         unoptimized
@@ -168,7 +168,7 @@ export default function IgcsePage() {
                         <div className="lg:w-1/2 order-2 lg:order-1">
                             <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-slate-100 border-8 transform rotate-1">
                                 <Image
-                                    src="/school-life-2.jpg"
+                                    src="/appointment.jpg"
                                     alt="Holistic Growth at IGCSE"
                                     fill
                                     className="object-cover"
@@ -197,21 +197,7 @@ export default function IgcsePage() {
                 </div>
             </section>
 
-            <section className="py-24 bg-[#E6C1BC] px-6">
-                <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl lg:text-7xl font-black text-[#0A2351] mb-12 font-poppins">
-                        Empower Their Future
-                    </h2>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link href="/contact-us" className="w-full sm:w-auto bg-[#0A2351] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
-                            Start Admission
-                        </Link>
-                        <Link href="/contact" className="w-full sm:w-auto bg-white text-[#0A2351] px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-slate-50 transition-all">
-                            Inquire Now
-                        </Link>
-                    </div>
-                </div>
-            </section>
+
         </main>
     );
 }

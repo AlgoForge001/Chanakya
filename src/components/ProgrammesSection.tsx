@@ -10,7 +10,7 @@ const programmeItems = [
         id: 'first-step',
         title: "Chanakya's First Step",
         subtitle: 'Age 3+',
-        image: '/early-years.png',
+        image: '/appointment.jpg',
         content: 'A play-based programme with a holistic curriculum, engaging resources, and support to measure progress.',
         domains: [
             'Languages and Literacy',
@@ -26,7 +26,7 @@ const programmeItems = [
         title: 'Cambridge Primary',
         subtitle: 'Age 5+',
         href: '/programmes/primary',
-        image: '/primary.png',
+        image: '/appointment.jpg',
         content: 'Clear, adaptable curriculum and flexible assessment options to stretch, challenge and inspire your child.'
     },
     {
@@ -34,7 +34,7 @@ const programmeItems = [
         title: 'Cambridge Lower Secondary',
         subtitle: 'Age 11+',
         href: '/programmes/secondary',
-        image: '/secondary.png',
+        image: '/appointment.jpg',
         description: "Our lower secondary programme is designed to provide a diverse range of educational experiences aimed at fostering personal growth and the development of each student. Recognizing the unique developmental needs of every learner, we customize our teaching methods to accommodate these differences. We value and respect various learning styles, acknowledging that each child has a distinct approach to comprehending and mastering new knowledge.\n\nAt this stage, we introduce our students to challenging concepts that enhance their cognitive abilities. Our educators empower students to cultivate their own learning strategies, promoting long-term benefits and encouraging the discovery of their individual strengths. Our goal is to cultivate independent thinking among students, guiding them to formulate their own thoughts, ideas, and beliefs with confidence in their knowledge and skills.\n\nBeyond the classroom, we advocate for holistic development by integrating outdoor play, sports, dance, music, and various other enriching activities. Our goal is to not only foster academic growth but also to cultivate well-rounded individuals who are equipped with the skills and confidence to navigate the complexities of the world around them.",
         content: 'Stretch, challenge and inspire your child.',
         highlights: [
@@ -49,7 +49,7 @@ const programmeItems = [
         title: 'Cambridge IGCSE',
         subtitle: 'Age 14+',
         href: '/programmes/igcse',
-        image: '/igcse.png',
+        image: '/appointment.jpg',
         description: "Our upper secondary programme is crafted to provide a comprehensive curriculum that equips learners for their future academic pursuits at colleges and universities of their choice. With a robust and demanding academic framework, we aim to refine and enhance the knowledge and skills of our students through consistent practice and dedicated effort.\n\nDuring these crucial formative years, we challenge our students to apply the skills they have honed throughout their earlier academic journey. As educators, we deeply appreciate the significance of this academic phase and are committed to supporting our students in achieving their aspirations.\n\nFurthermore, we emphasize the importance of holistic development by encouraging students to actively participate in co-curricular activities such as sports and arts. We believe that such engagement fosters all-round growth and nurtures well-rounded individuals poised for success in both academic and personal pursuits.",
         content: 'Comprehensive curriculum to equip learners for future academic pursuits.',
         highlights: [
@@ -63,14 +63,14 @@ const programmeItems = [
         id: 'advanced',
         title: 'Cambridge Advanced',
         subtitle: 'Age 16+',
-        image: '/secondary.png',
+        image: '/appointment.jpg',
         content: 'In-depth curriculum and fair assessment to predict university performance. Includes Cambridge International AS & A Level (55 subjects), Cambridge AICE, and IPQ.'
     }
 ];
 
 const ProgrammesSection = () => {
     const [openItem, setOpenItem] = useState<string | null>('first-step');
-    const [displayImage, setDisplayImage] = useState('/early-years.png');
+    const [displayImage, setDisplayImage] = useState('/appointment.jpg');
     const [isImageFading, setIsImageFading] = useState(false);
 
     useEffect(() => {

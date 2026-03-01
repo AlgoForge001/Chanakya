@@ -14,11 +14,18 @@ export default function Home() {
       {/* Promotional Banner */}
       <Link
         href="/contact-us"
-        className="bg-gradient-to-r from-[#0A2351] to-[#0077B6] py-4 px-6 text-center shadow-inner hover:brightness-110 transition-all cursor-pointer group flex items-center justify-center space-x-2"
+        className="bg-gradient-to-r from-[#0A2351] to-[#0077B6] py-3 px-6 text-center shadow-inner hover:brightness-110 transition-all cursor-pointer group flex items-center justify-center space-x-3"
       >
-        <p className="text-white text-lg md:text-xl font-medium tracking-wide font-poppins drop-shadow-sm">
-          Palghar’s Gateway to Cambridge International Education
-        </p>
+        <div className="flex items-center space-x-3">
+          <img
+            src="/logo_cambridge.jpg"
+            alt="Cambridge Logo"
+            className="h-8 md:h-10 w-auto object-contain rounded-md bg-white p-1"
+          />
+          <p className="text-white text-base md:text-lg lg:text-xl font-medium tracking-wide font-poppins drop-shadow-sm">
+            Palghar’s Gateway to Cambridge International Education
+          </p>
+        </div>
         <ChevronRight className="text-white w-5 h-5 group-hover:translate-x-1 transition-transform" />
       </Link>
 

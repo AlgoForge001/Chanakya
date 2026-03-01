@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
@@ -79,12 +80,18 @@ const HeroCarousel = () => {
                                     {slide.description}
                                 </p>
                                 <div className="flex justify-center space-x-4">
-                                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg active:scale-95">
+                                    <Link
+                                        href="/#culture-section"
+                                        className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg active:scale-95 flex items-center"
+                                    >
                                         Learn More
-                                    </button>
-                                    <button className="bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/50 px-8 py-3 rounded-full font-bold transition-all active:scale-95">
+                                    </Link>
+                                    <Link
+                                        href="/campuses"
+                                        className="bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/50 px-8 py-3 rounded-full font-bold transition-all active:scale-95 flex items-center"
+                                    >
                                         Our Facilities
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -56,7 +56,7 @@ export default function PrimaryPage() {
                                 <div className="absolute inset-0 bg-blue-400 rounded-[80px] -rotate-3 opacity-20 scale-105" />
                                 <div className="relative w-full h-full rounded-[80px] overflow-hidden border-[12px] border-white/10 shadow-3xl bg-slate-900">
                                     <Image
-                                        src="/primary.png"
+                                        src="/appointment.jpg"
                                         alt="Cambridge Primary Students"
                                         fill
                                         unoptimized
@@ -152,7 +152,7 @@ export default function PrimaryPage() {
                         <div className="lg:w-1/2 order-2 lg:order-1">
                             <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-white border-[12px] bg-white">
                                 <Image
-                                    src="/school-life-1.jpg"
+                                    src="/appointment.jpg"
                                     alt="Primary Progression"
                                     fill
                                     className="object-cover"
@@ -177,21 +177,7 @@ export default function PrimaryPage() {
                 </div>
             </section>
 
-            <section className="py-24 bg-[#0A2351] px-6 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto text-center relative z-10">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-12 font-poppins">
-                        Ready for Excellence?
-                    </h2>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link href="/contact-us" className="w-full sm:w-auto bg-[#5B5FC7] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
-                            Apply Today
-                        </Link>
-                        <Link href="/contact" className="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-white hover:text-[#0A2351] transition-all">
-                            Talk to Us
-                        </Link>
-                    </div>
-                </div>
-            </section>
+
         </main>
     );
 }

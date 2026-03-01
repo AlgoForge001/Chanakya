@@ -56,7 +56,7 @@ export default function SecondaryPage() {
                                 <div className="absolute inset-0 bg-blue-300 rounded-[80px] -rotate-3 opacity-20 scale-105" />
                                 <div className="relative w-full h-full rounded-[80px] overflow-hidden border-[12px] border-white/10 shadow-3xl bg-slate-900">
                                     <Image
-                                        src="/secondary.png"
+                                        src="/appointment.jpg"
                                         alt="Cambridge Lower Secondary Students"
                                         fill
                                         unoptimized
@@ -156,7 +156,7 @@ export default function SecondaryPage() {
                         <div className="lg:w-1/2 order-2 lg:order-1">
                             <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/school-life-3.jpg"
+                                    src="/appointment.jpg"
                                     alt="Holistic Activities"
                                     fill
                                     className="object-cover"
@@ -182,21 +182,7 @@ export default function SecondaryPage() {
                 </div>
             </section>
 
-            <section className="py-24 bg-[#5B5FC7] px-6">
-                <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-12 font-poppins">
-                        Ready to Join the Journey?
-                    </h2>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                        <Link href="/contact-us" className="w-full sm:w-auto bg-white text-[#5B5FC7] px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
-                            Apply for Admission
-                        </Link>
-                        <Link href="/contact" className="w-full sm:w-auto bg-[#0A2351] text-white px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-opacity-90 transition-all">
-                            Visit our Campus
-                        </Link>
-                    </div>
-                </div>
-            </section>
+
         </main>
     );
 }

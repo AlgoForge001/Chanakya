@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const CultureSection = () => {
     return (
-        <section className="relative w-full bg-[#4F56C0] pt-20 pb-24 overflow-hidden">
+        <section id="culture-section" className="relative w-full bg-[#4F56C0] pt-20 pb-24 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative z-10">
                 {/* Centered Title */}
                 <div className="text-center mb-16">

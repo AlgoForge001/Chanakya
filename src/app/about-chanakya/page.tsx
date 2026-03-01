@@ -4,10 +4,10 @@ import { GraduationCap, Target, Heart, BookOpen, Users, Camera } from 'lucide-re
 // Navbar and Footer are removed because they are in layout.tsx
 
 const facultyData = [
-    { name: 'Dr. Rajesh Sharma', role: 'Principal', image: '/Campus View.avif' },
-    { name: 'Mrs. Sunita Verma', role: 'Science Head', image: '/Campus View.avif' },
-    { name: 'Mr. Amit Patel', role: 'Maths Coordinator', image: '/Campus View.avif' },
-    { name: 'Ms. Priya Singh', role: 'Primary Coordinator', image: '/Campus View.avif' },
+    { name: 'Rishabh Tiwari', role: 'Principal', image: '/princiapl.jpg' },
+    { name: 'Mrs. Sunita Verma', role: 'Science Head', image: '/sci_head.png' },
+    { name: 'Mr. Amit Patel', role: 'Maths Coordinator', image: '/maths_coord.avif' },
+    { name: 'Ms. Priya Singh', role: 'Primary Coordinator', image: '/pri_coord.jpg' },
 ];
 
 const AboutPage = () => {
