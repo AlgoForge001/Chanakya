@@ -48,7 +48,7 @@ export default function IgcsePage() {
                                 <div className="relative w-full h-full rounded-[60px] md:rounded-[80px] overflow-hidden border-[12px] border-white/10 shadow-3xl bg-slate-900">
                                     <Image
                                         src="/appointment.jpg"
-                                        alt="Cambridge IGCSE Students"
+                                        alt="Cambridge Board Students"
                                         fill
                                         unoptimized
                                         className="object-cover"
@@ -127,7 +127,7 @@ export default function IgcsePage() {
                                 70+ Subjects <br />Infinite Pathways
                             </h2>
                             <p className="text-blue-100/70 mb-12 text-lg">
-                                Your child can choose from over 70 subjects at Cambridge IGCSE, including 30 languages—so they can study the subjects they enjoy and are best at.
+                                Your child can choose from over 70 subjects at Cambridge Board, including 30 languages—so they can study the subjects they enjoy and are best at.
                             </p>
                             <div className="flex flex-wrap gap-4 mb-8">
                                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full border border-white/20 text-blue-200 text-sm font-bold">
@@ -169,7 +169,7 @@ export default function IgcsePage() {
                             <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-slate-100 border-8 transform rotate-1">
                                 <Image
                                     src="/appointment.jpg"
-                                    alt="Holistic Growth at IGCSE"
+                                    alt="Holistic Growth at Cambridge Board"
                                     fill
                                     className="object-cover"
                                 />

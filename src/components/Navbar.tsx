@@ -24,7 +24,7 @@ const navItems = [
       { name: 'First Step', href: '/programmes#first-step' },
       { name: 'Cambridge Primary', href: '/programmes/primary' },
       { name: 'Cambridge Secondary', href: '/programmes/secondary' },
-      { name: 'Cambridge IGCSE', href: '/programmes/igcse' },
+      { name: 'Cambridge Board', href: '/programmes/igcse' },
     ]
   },
   { name: 'Events', href: '/events' },

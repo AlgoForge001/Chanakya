@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 const SocialBubbles = () => {
     const whatsappNumber = "919730390599";
@@ -9,9 +9,29 @@ const SocialBubbles = () => {
     const encodedWhatsappMessage = encodeURIComponent(whatsappMessage);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedWhatsappMessage}`;
     const instagramUrl = "https://www.instagram.com/chhanakyaschool";
+    const facebookUrl = "https://www.facebook.com/share/18YbEc2uc2/";
 
     return (
         <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-center space-y-4">
+            {/* Facebook Bubble */}
+            <div className="group relative">
+                <a
+                    href={facebookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-14 h-14 bg-[#1877F2] text-white rounded-full shadow-lg transition-all duration-300 transform group-hover:scale-110 active:scale-95 group-hover:-rotate-12"
+                    aria-label="Visit Facebook"
+                >
+                    <Facebook size={26} />
+                </a>
+
+                {/* Tooltip */}
+                <div className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-gray-800 px-4 py-2 rounded-xl shadow-xl text-xs font-semibold opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-x-4 group-hover:translate-x-0 whitespace-nowrap border border-gray-100">
+                    Connect on Facebook
+                    <div className="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white" />
+                </div>
+            </div>
+
             {/* Instagram Bubble */}
             <div className="group relative">
                 <a

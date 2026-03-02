@@ -22,7 +22,7 @@ const classesData = [
         accentColor: 'text-[#5B5FC7]'
     },
     {
-        title: 'Cambridge IGCSE',
+        title: 'Cambridge Board',
         description: 'A globally recognized qualification preparing students for higher education and future success.',
         image: '/14072022015320_8033_Chanakya-The-Global-School-For-Intellectuals-Palghar-(7).jpg', // Placeholder
         bgColor: 'bg-[#5B5FC7]', // School Blue

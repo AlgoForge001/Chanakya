@@ -46,7 +46,7 @@ const programmeItems = [
     },
     {
         id: 'igcse',
-        title: 'Cambridge IGCSE',
+        title: 'Cambridge Board',
         subtitle: 'Age 14+',
         href: '/programmes/igcse',
         image: '/appointment.jpg',

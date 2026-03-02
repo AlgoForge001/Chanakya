@@ -296,7 +296,7 @@ const TestimonialsSection = () => {
                                             <option value="">Select Child's Grade</option>
                                             <option value="Primary School">Primary School</option>
                                             <option value="Lower Secondary">Lower Secondary</option>
-                                            <option value="IGCSE">IGCSE</option>
+                                            <option value="Cambridge Board">Cambridge Board</option>
                                         </select>
                                     </div>
                                     <div className="relative">

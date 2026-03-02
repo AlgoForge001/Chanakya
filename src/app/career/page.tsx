@@ -26,7 +26,7 @@ const requirements = [
     },
     {
         title: "Experience",
-        desc: "At least two years of teaching experience, preferably in IGCSE.",
+        desc: "At least two years of teaching experience, preferably in Cambridge Board.",
         icon: Clock
     },
     {
@@ -87,7 +87,7 @@ export default function CareerPage() {
                             </h2>
                             <div className="space-y-6 text-slate-600 font-inter leading-relaxed text-lg">
                                 <p>
-                                    Chanakya The Global School for Intellectuals is dedicated to fostering a culture of excellence and is actively seeking educators who are innovative, collaborative, and exceptional practitioners of the IGCSE curriculum.
+                                    Chanakya The Global School for Intellectuals is dedicated to fostering a culture of excellence and is actively seeking educators who are innovative, collaborative, and exceptional practitioners of the Cambridge Board curriculum.
                                 </p>
                                 <p>
                                     Ideal candidates will possess strong communication skills, including proficiency in IT, and a deep commitment to advancing the school's mission and vision. We believe in the power of professional synergy to create an environment where both students and teachers thrive.

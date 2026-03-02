@@ -44,7 +44,7 @@ const Footer = () => {
                     </div>
                     <div className="text-center md:text-right">
                         <span className="inline-block px-4 py-1.5 bg-emerald-600/20 border border-emerald-500/30 rounded-full text-emerald-400 text-xs font-bold uppercase tracking-wider">
-                            Proposed Cambridge IGCSE Board
+                            Cambridge Board
                         </span>
                     </div>
                 </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                             {[Facebook, Instagram, Youtube].map((Icon, i) => (
                                 <Link
                                     key={i}
-                                    href="#"
+                                    href="https://www.facebook.com/share/18YbEc2uc2/"
                                     className="w-10 h-10 border border-white/10 rounded-lg flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all shadow-lg"
                                 >
                                     <Icon size={18} />
@@ -151,8 +151,8 @@ const Footer = () => {
                         <div className="pt-4">
                             <div className="p-4 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm">
                                 <p className="text-[10px] text-slate-500 uppercase tracking-widest mb-1">Affiliation</p>
-                                <p className="text-sm font-bold text-white font-poppins">Cambridge IGCSE</p>
-                                <p className="text-[10px] text-emerald-400">Proposed Academic Pathway</p>
+                                <p className="text-sm font-bold text-white font-poppins">Cambridge Board</p>
+                                <p className="text-[10px] text-emerald-400">Academic Pathway</p>
                             </div>
                         </div>
                     </div>
