@@ -1,124 +1,99 @@
 'use server';
 
+/**
+ * Generic helper to handle Google Apps Script submissions with robust error handling
+ * and explicit redirect following.
+ */
+async function postToAppsScript(url: string, data: any, context: string) {
+    try {
+        console.log(`[${context}] POSTing to: ${url}`);
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                ...data,
+                timestamp: new Date().toISOString(),
+            }),
+            redirect: 'follow', // Explicitly follow redirects for Apps Script
+            cache: 'no-store', // Ensure we don't hit cached errors
+        });
+
+        if (!response.ok) {
+            // Log detailed error info to the server console
+            let errorDetail = '';
+            try {
+                errorDetail = await response.text();
+            } catch (e) {
+                errorDetail = 'Could not read error response body';
+            }
+
+            console.error(`[${context}] Google Apps Script Error [${response.status}]:`, errorDetail);
+
+            // Return a more descriptive error based on the status
+            if (response.status === 404) return { success: false, error: 'Database endpoint not found. Please check configuration.' };
+            if (response.status === 401 || response.status === 403) return { success: false, error: 'Database access denied. Check script permissions.' };
+
+            return { success: false, error: `Database service error (${response.status})` };
+        }
+
+        return { success: true };
+    } catch (error) {
+        console.error(`[${context}] Network/Fetch Error:`, error);
+        return { success: false, error: 'Network connection failed. Please check your internet.' };
+    }
+}
+
 export async function submitFeedback(formData: FormData) {
-    const name = formData.get('name') as string;
-    const email = formData.get('email') as string;
-    const grade = formData.get('grade') as string;
-    const message = formData.get('message') as string;
+    const data = {
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        grade: formData.get('grade') as string,
+        message: formData.get('message') as string,
+    };
 
     const scriptUrl = process.env.GOOGLE_SHEET_WEBAPP_URL;
 
     if (!scriptUrl) {
-        console.error('GOOGLE_SHEET_WEBAPP_URL is not defined in environment variables');
-        return { success: false, error: 'Server configuration error' };
+        console.error('GOOGLE_SHEET_WEBAPP_URL is not defined');
+        return { success: false, error: 'Server configuration missing: GOOGLE_SHEET_WEBAPP_URL' };
     }
 
-    try {
-        const response = await fetch(scriptUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name,
-                email,
-                grade,
-                message,
-                timestamp: new Date().toISOString(),
-            }),
-        });
-
-        if (!response.ok) {
-            // Some Apps Script web apps return 302 redirects which fetch handles, 
-            // but if it's a real error, we catch it here.
-            const errorText = await response.text();
-            console.error('Google Apps Script error:', errorText);
-            return { success: false, error: 'Database connection failed' };
-        }
-
-        return { success: true };
-    } catch (error) {
-        console.error('Feedback submission error:', error);
-        return { success: false, error: 'Failed to send feedback' };
-    }
+    return await postToAppsScript(scriptUrl, data, 'General Feedback');
 }
 
 export async function submitTestimonial(formData: FormData) {
-    const name = formData.get('name') as string;
-    const email = formData.get('email') as string;
-    const message = formData.get('message') as string;
+    const data = {
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        message: formData.get('message') as string,
+    };
 
     const scriptUrl = process.env.TESTIMONIALS_SHEET_WEBAPP_URL;
 
     if (!scriptUrl) {
-        console.error('TESTIMONIALS_SHEET_WEBAPP_URL is not defined in environment variables');
-        return { success: false, error: 'Server configuration error' };
+        console.error('TESTIMONIALS_SHEET_WEBAPP_URL is not defined');
+        return { success: false, error: 'Server configuration missing: TESTIMONIALS_SHEET_WEBAPP_URL' };
     }
 
-    try {
-        const response = await fetch(scriptUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name,
-                email,
-                message,
-                timestamp: new Date().toISOString(),
-            }),
-        });
-
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error('Google Apps Script error (Testimonials):', errorText);
-            return { success: false, error: 'Database connection failed' };
-        }
-
-        return { success: true };
-    } catch (error) {
-        console.error('Testimonial submission error:', error);
-        return { success: false, error: 'Failed to send testimonial' };
-    }
+    return await postToAppsScript(scriptUrl, data, 'Testimonial');
 }
 
 export async function submitContactForm(formData: FormData) {
-    const name = formData.get('name') as string;
-    const email = formData.get('email') as string;
-    const phone = formData.get('phone') as string;
-    const message = formData.get('message') as string;
+    const data = {
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
+        message: formData.get('message') as string,
+    };
 
     const scriptUrl = process.env.CONTACT_US_SHEET_WEBAPP_URL;
 
     if (!scriptUrl) {
-        console.error('CONTACT_US_SHEET_WEBAPP_URL is not defined in environment variables');
-        return { success: false, error: 'Server configuration error' };
+        console.error('CONTACT_US_SHEET_WEBAPP_URL is not defined');
+        return { success: false, error: 'Server configuration missing: CONTACT_US_SHEET_WEBAPP_URL' };
     }
 
-    try {
-        const response = await fetch(scriptUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name,
-                email,
-                phone,
-                message,
-                timestamp: new Date().toISOString(),
-            }),
-        });
-
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error('Google Apps Script error (Contact Us):', errorText);
-            return { success: false, error: 'Database connection failed' };
-        }
-
-        return { success: true };
-    } catch (error) {
-        console.error('Contact form submission error:', error);
-        return { success: false, error: 'Failed to send contact inquiry' };
-    }
+    return await postToAppsScript(scriptUrl, data, 'Contact Us Inquiry');
 }
