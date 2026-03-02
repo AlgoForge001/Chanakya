@@ -58,7 +58,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center overflow-hidden shadow-lg transition-transform group-hover:scale-110 border border-white/20">
-              <img src="/school_logo.jpg" alt="Logo" className="w-full h-full object-cover" />
+              <img src="/school_logo.png" alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-white leading-none">

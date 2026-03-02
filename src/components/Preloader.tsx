@@ -23,7 +23,7 @@ const Preloader = () => {
             <div className="relative mb-8">
                 <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-3xl p-1 shadow-2xl animate-startup-pulse overflow-hidden border border-white/20">
                     <img
-                        src="/school_logo.jpg"
+                        src="/school_logo.png"
                         alt="Chanakya Logo"
                         className="w-full h-full object-cover"
                     />

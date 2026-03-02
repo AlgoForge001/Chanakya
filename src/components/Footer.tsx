@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between border-b border-white/10 pb-12 mb-12">
                     <div className="flex items-center space-x-4 mb-6 md:mb-0 group cursor-pointer">
                         <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform overflow-hidden">
-                            <img src="/school_logo.jpg" alt="Logo" className="w-full h-full object-cover" />
+                            <img src="/school_logo.png" alt="Logo" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <h2 className="text-xl md:text-2xl font-bold font-poppins tracking-tight">
