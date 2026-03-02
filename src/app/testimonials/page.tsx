@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Quote, Star, User, Mail, GraduationCap, MessageSquare, Send, Heart, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Quote, Star, User, Mail, GraduationCap, MessageSquare, Send, Heart, CheckCircle2, AlertCircle, Phone } from 'lucide-react';
 import { submitTestimonial } from '@/app/actions/feedback';
 
 const testimonialsData = [
@@ -262,6 +262,19 @@ const TestimonialsPage = () => {
                                                 required
                                                 className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-transparent rounded-2xl text-slate-700 placeholder:text-slate-300 focus:bg-white focus:border-[#0077B6]/20 transition-all outline-none"
                                                 placeholder="How can we reach you?"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="space-y-2">
+                                        <label className="text-slate-400 text-[10px] font-black uppercase tracking-widest ml-1">Contact Number</label>
+                                        <div className="relative">
+                                            <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 w-5 h-5" />
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                required
+                                                className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-transparent rounded-2xl text-slate-700 placeholder:text-slate-300 focus:bg-white focus:border-[#0077B6]/20 transition-all outline-none"
+                                                placeholder="Your Phone Number"
                                             />
                                         </div>
                                     </div>

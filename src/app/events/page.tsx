@@ -117,7 +117,7 @@ export default function EventsPage() {
 
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                             <a
-                                href="/Annual Report_.pdf"
+                                href="/Chanakya the Global School of Intellectuals.pdf"
                                 download
                                 className="w-full md:w-auto inline-flex items-center justify-center bg-brand-lime hover:bg-white text-brand-blue px-8 py-4 rounded-full text-lg font-black transition-all shadow-xl scale-100 hover:scale-105 active:scale-95 group/dl font-outfit tracking-tight whitespace-nowrap"
                             >
@@ -127,7 +127,7 @@ export default function EventsPage() {
                             </a>
 
                             <a
-                                href="/Chanakya the Global School of Intellectuals.pdf"
+                                href="/Annual Report_.pdf"
                                 download
                                 className="w-full md:w-auto inline-flex items-center justify-center bg-white hover:bg-brand-lime text-[#0A2351] px-8 py-4 rounded-full text-lg font-black transition-all shadow-xl scale-100 hover:scale-105 active:scale-95 group/dl font-outfit tracking-tight whitespace-nowrap"
                             >

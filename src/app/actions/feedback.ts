@@ -6,7 +6,6 @@
  */
 async function postToAppsScript(url: string, data: any, context: string) {
     try {
-        console.log(`[${context}] POSTing to: ${url}`);
         const response = await fetch(url, {
             method: 'POST',
             headers: {
@@ -14,10 +13,10 @@ async function postToAppsScript(url: string, data: any, context: string) {
             },
             body: JSON.stringify({
                 ...data,
-                timestamp: new Date().toISOString(),
+                timestamp: new Date().toLocaleString(), // Match format in Apps Script snippet
             }),
-            redirect: 'follow', // Explicitly follow redirects for Apps Script
-            cache: 'no-store', // Ensure we don't hit cached errors
+            redirect: 'follow',
+            cache: 'no-store',
         });
 
         if (!response.ok) {
@@ -49,6 +48,7 @@ export async function submitFeedback(formData: FormData) {
     const data = {
         name: formData.get('name') as string,
         email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
         grade: formData.get('grade') as string,
         message: formData.get('message') as string,
     };
@@ -67,6 +67,8 @@ export async function submitTestimonial(formData: FormData) {
     const data = {
         name: formData.get('name') as string,
         email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
+        grade: formData.get('phone') as string, // Also mapping phone to 'grade' here for compatibility
         message: formData.get('message') as string,
     };
 
@@ -84,6 +86,7 @@ export async function submitContactForm(formData: FormData) {
     const data = {
         name: formData.get('name') as string,
         email: formData.get('email') as string,
+        grade: formData.get('phone') as string,
         phone: formData.get('phone') as string,
         message: formData.get('message') as string,
     };

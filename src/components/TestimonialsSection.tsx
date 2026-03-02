@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { User, Mail, GraduationCap, MessageSquare, Send, Quote, Star, CheckCircle2, AlertCircle } from 'lucide-react';
+import { User, Mail, GraduationCap, MessageSquare, Send, Quote, Star, CheckCircle2, AlertCircle, Phone } from 'lucide-react';
 import { submitFeedback } from '@/app/actions/feedback';
 
 const testimonialsData = [
@@ -273,6 +273,16 @@ const TestimonialsSection = () => {
                                             name="email"
                                             required
                                             placeholder="Email Address"
+                                            className="w-full pl-12 pr-4 py-4 bg-slate-50 border-none rounded-2xl font-inter focus:ring-2 focus:ring-[#5B5FC7]/20 transition-all outline-none text-slate-700"
+                                        />
+                                    </div>
+                                    <div className="relative">
+                                        <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5" />
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            required
+                                            placeholder="Contact Number"
                                             className="w-full pl-12 pr-4 py-4 bg-slate-50 border-none rounded-2xl font-inter focus:ring-2 focus:ring-[#5B5FC7]/20 transition-all outline-none text-slate-700"
                                         />
                                     </div>
