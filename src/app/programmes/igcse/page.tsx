@@ -1,7 +1,11 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import type { Metadata } from "next";
 import { ChevronRight, Globe, Zap, Heart, ShieldCheck, BookOpen, Microscope, Sparkles, GraduationCap, Users2, Languages, ExternalLink } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: "Cambridge Upper Secondary | IGCSE School in Palghar",
+    description: "Our Cambridge Upper Secondary (IGCSE) programme in Palghar prepares students for higher education with a global perspective and flexible subject choices.",
+    keywords: ["IGCSE Palghar", "Cambridge Upper Secondary Palghar", "Secondary Education Palghar", "IGCSE Subjects"],
+};
 
 const impactPoints = [
     { title: 'Reflective & Innovative', desc: 'Confidence to embrace new information, ideas and challenges.', icon: Zap },

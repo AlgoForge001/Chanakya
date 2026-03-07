@@ -99,28 +99,28 @@ const Footer = () => {
                             <span className="absolute -bottom-2 left-0 w-12 h-1 bg-emerald-600 rounded-full" />
                         </h3>
                         <div className="space-y-4">
-                            <div className="flex items-start space-x-3 group">
+                            <address className="flex items-start space-x-3 group not-italic">
                                 <MapPin className="w-5 h-5 text-emerald-500 mt-1 flex-shrink-0" />
                                 <span className="text-slate-400 text-sm font-inter">
                                     Shirgaon, New Satpati Road,<br />
                                     Palghar (W) 401404, Maharashtra
                                 </span>
-                            </div>
+                            </address>
                             <div className="flex flex-col space-y-2">
-                                <div className="flex items-center space-x-3 group">
+                                <div className="flex items-center space-x-3 group text-slate-400 hover:text-white transition-colors">
                                     <Phone className="w-5 h-5 text-emerald-500 flex-shrink-0" />
                                     <div className="flex flex-col">
-                                        <span className="text-slate-400 text-sm font-inter">+91 9730390599</span>
-                                        <span className="text-slate-400 text-sm font-inter">+91 9730990599</span>
+                                        <a href="tel:+919730390599" className="text-sm font-inter">+91 9730390599</a>
+                                        <a href="tel:+919730990599" className="text-sm font-inter">+91 9730990599</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex flex-col space-y-2">
-                                <div className="flex items-center space-x-3 group">
+                                <div className="flex items-center space-x-3 group text-slate-400 hover:text-white transition-colors">
                                     <Mail className="w-5 h-5 text-emerald-500 flex-shrink-0" />
                                     <div className="flex flex-col">
-                                        <span className="text-slate-400 text-sm font-inter underline">chanakyatheglobalschool@gmail.com</span>
-                                        <span className="text-slate-400 text-sm font-inter underline">info@chanakyatheglobalschool.com</span>
+                                        <a href="mailto:chanakyatheglobalschool@gmail.com" className="text-sm font-inter">chanakyatheglobalschool@gmail.com</a>
+                                        <a href="mailto:info@chanakyatheglobalschool.com" className="text-sm font-inter">info@chanakyatheglobalschool.com</a>
                                     </div>
                                 </div>
                             </div>

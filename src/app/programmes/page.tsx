@@ -1,5 +1,11 @@
-import React from 'react';
+import type { Metadata } from "next";
 import ProgrammesSection from '@/components/ProgrammesSection';
+
+export const metadata: Metadata = {
+    title: "Our Programmes | Cambridge Curriculum School Palghar",
+    description: "Explore the diverse educational programmes at Chanakya International School, from primary to upper secondary, following the prestigious Cambridge curriculum.",
+    keywords: ["School Programmes Palghar", "Cambridge Curriculum Palghar", "IGCSE Courses Palghar", "Educational Pathways"],
+};
 
 export default function ProgrammesPage() {
     return (

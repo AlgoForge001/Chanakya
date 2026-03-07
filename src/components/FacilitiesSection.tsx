@@ -6,24 +6,28 @@ const facilities = [
         title: 'Positive Learning Environment',
         image: '/positive_learning.jpg',
         description: 'A joyful and engaging classroom atmosphere that encourages curiosity and confidence.',
+        alt: 'Students actively learning in a bright, modern classroom at Chanakya School',
         reverse: false,
     },
     {
         title: 'Safe School Bus',
         image: '/bus.png',
         description: 'GPS-enabled buses with trained staff ensuring safe daily transportation.',
+        alt: 'Safe and secure school bus transportation service at Chanakya International School Palghar',
         reverse: true,
     },
     {
         title: 'Healthy Canteen',
         image: '/canteen.jpg',
         description: 'Nutritious, hygienic meals that support students’ health and well-being.',
+        alt: 'Hygienic school canteen providing healthy meals for students',
         reverse: false,
     },
     {
         title: 'CCTV Surveillance',
         image: '/cctv.jpg',
         description: '24/7 CCTV monitoring across the campus for complete student safety.',
+        alt: 'Advanced CCTV surveillance system for campus-wide security at Chanakya School',
         reverse: true,
     },
 ];
@@ -107,7 +111,7 @@ const FacilitiesSection = () => {
                                     <div className="relative w-full h-full rounded-[24px] overflow-hidden">
                                         <Image
                                             src={facility.image}
-                                            alt={facility.title}
+                                            alt={facility.alt || facility.title}
                                             fill
                                             className="object-cover transition-transform duration-700 group-hover:scale-110"
                                         />

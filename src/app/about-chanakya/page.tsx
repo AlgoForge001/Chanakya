@@ -1,6 +1,11 @@
-import React from 'react';
-import Image from 'next/image';
+import type { Metadata } from "next";
 import { GraduationCap, Target, Heart, BookOpen, Users, Camera } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: "About Us | Chanakya International School Palghar",
+    description: "Learn about Chanakya International School's philosophy, vision, and mission. Our dedicated educators provide a global hub for intellectual development in Palghar.",
+    keywords: ["About Chanakya School", "School Philosophy Palghar", "Education Mission Palghar", "Chanakya School Faculty"],
+};
 // Navbar and Footer are removed because they are in layout.tsx
 
 const facultyData = [

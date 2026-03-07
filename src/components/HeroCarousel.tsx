@@ -11,21 +11,25 @@ const slides = [
         image: '/14072022012942_0_456814_Chanakya-The-Global-School-For-Intellectuals-Palghar-(1).jpg',
         title: 'World Class Infrastructure',
         description: 'Modern campus designed for holistic development and intellectual growth.',
+        alt: 'World-class campus infrastructure of Chanakya International School in Palghar',
     },
     {
         image: '/14072022015320_8033_Chanakya-The-Global-School-For-Intellectuals-Palghar-(7).jpg',
         title: 'Excellence in Education',
         description: 'Nurturing the next generation of global leaders with a future-ready curriculum.',
+        alt: 'Students studying in a modern classroom at Chanakya International School',
     },
     {
         image: '/Campus View.avif',
         title: 'Inspiring Environment',
         description: 'A serene and safe space where curiosity meets opportunity.',
+        alt: 'Aerial view of Chanakya International School campus in Palghar',
     },
     {
         image: '/Chanakya_The_Global_School_For_Intellectuals_5205_Dance_UA_1.jpg',
         title: 'Vibrant Extra-Curriculars',
         description: 'Promoting talent beyond academics through arts, sports, and culture.',
+        alt: 'Students performing a traditional dance at Chanakya International School annual event',
     },
 ];
 
@@ -64,7 +68,7 @@ const HeroCarousel = () => {
                         <div className="absolute inset-0 bg-black/30 z-10" />
                         <Image
                             src={slide.image}
-                            alt={slide.title}
+                            alt={slide.alt || slide.title}
                             fill
                             className="object-cover"
                             priority={index === 0}
