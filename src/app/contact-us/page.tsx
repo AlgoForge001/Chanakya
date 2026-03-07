@@ -1,11 +1,8 @@
-import type { Metadata } from "next";
-import { Mail, Phone, MapPin, ChevronRight, Clock, Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+'use client';
 
-export const metadata: Metadata = {
-    title: "Contact Us | Chanakya International School Palghar",
-    description: "Get in touch with Chanakya International School in Palghar for admissions, campus tours, or general inquiries. Find our location, phone, and email details here.",
-    keywords: ["Contact Chanakya School", "School Location Palghar", "School Admission Inquiry", "Chanakya School Phone"],
-};
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { Mail, Phone, MapPin, ChevronRight, Clock, Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { submitContactForm } from '@/app/actions/feedback';
 
 export default function ContactUsPage() {

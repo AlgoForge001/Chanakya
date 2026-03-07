@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
+import Image from 'next/image';
 import { GraduationCap, Target, Heart, BookOpen, Users, Camera } from 'lucide-react';
 
 export const metadata: Metadata = {
