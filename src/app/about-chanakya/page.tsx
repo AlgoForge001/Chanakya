@@ -127,13 +127,13 @@ const AboutPage = () => {
 
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 h-[600px] md:h-[800px]">
                     <div className="relative col-span-2 row-span-2 rounded-3xl overflow-hidden group shadow-lg">
-                        <Image src="/Chanakya_The_Global_School_For_Intellectuals_5205_Dance_UA_1.jpg" alt="Dance" fill className="object-cover transition-transform group-hover:scale-105" />
+                        <Image src="/life.jpeg" alt="Dance" fill className="object-cover transition-transform group-hover:scale-105" />
                     </div>
                     <div className="relative rounded-3xl overflow-hidden group shadow-lg">
                         <Image src="/14072022015320_8033_Chanakya-The-Global-School-For-Intellectuals-Palghar-(7).jpg" alt="Classroom" fill className="object-cover transition-transform group-hover:scale-105" />
                     </div>
                     <div className="relative rounded-3xl overflow-hidden group shadow-lg">
-                        <Image src="/positive_learning.jpg" alt="Active Learning" fill className="object-cover transition-transform group-hover:scale-105" />
+                        <Image src="/student.jpeg" alt="Active Learning" fill className="object-cover transition-transform group-hover:scale-105" />
                     </div>
                     <div className="relative col-span-2 rounded-3xl overflow-hidden group shadow-lg h-[250px] md:h-auto">
                         <Image src="/Campus View.avif" alt="Campus Life" fill className="object-cover transition-transform group-hover:scale-105" />

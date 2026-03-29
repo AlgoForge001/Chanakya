@@ -90,8 +90,7 @@ const ClassesSection = () => {
                                     href="#"
                                     className={`inline-flex items-center ${item.accentColor} font-bold font-inter group/link`}
                                 >
-                                    Learn More
-                                    <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" />
+
                                 </Link>
                             </div>
                         </div>

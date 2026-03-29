@@ -4,7 +4,7 @@ import Image from 'next/image';
 const facilities = [
     {
         title: 'Positive Learning Environment',
-        image: '/positive_learning.jpg',
+        image: '/student.jpeg',
         description: 'A joyful and engaging classroom atmosphere that encourages curiosity and confidence.',
         alt: 'Students actively learning in a bright, modern classroom at Chanakya School',
         reverse: false,

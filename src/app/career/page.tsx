@@ -139,7 +139,7 @@ export default function CareerPage() {
                                 <div className="absolute inset-0 bg-blue-100 rounded-[60px] rotate-3" />
                                 <div className="relative w-full h-full rounded-[60px] overflow-hidden border-[12px] border-white shadow-2xl">
                                     <Image
-                                        src="/international.jpg"
+                                        src="/global_comm.jpeg"
                                         alt="International Educators"
                                         fill
                                         className="object-cover"

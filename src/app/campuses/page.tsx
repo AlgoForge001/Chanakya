@@ -9,19 +9,19 @@ const facilities = [
         title: "Global Infrastructure",
         username: "@chanakya.building",
         time: "2m ago",
-        image: "/building.png",
+        image: "/infrastructure.jpeg",
     },
     {
         title: "Interactive Learning",
         username: "@chanakya.classroom",
         time: "5m ago",
-        image: "/classroom.png",
+        image: "/digital_learning.jpeg",
     },
     {
         title: "Digital Library",
         username: "@chanakya.library",
         time: "12m ago",
-        image: "/library.png",
+        image: "/lib.jpeg",
     },
     {
         title: "Eco Canteen",
@@ -39,7 +39,7 @@ const facilities = [
         title: "Activity Hub",
         username: "@chanakya.activities",
         time: "3h ago",
-        image: "/activity.png",
+        image: "/activity_hub.jpeg",
     },
 ];
 
