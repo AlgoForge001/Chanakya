@@ -27,7 +27,7 @@ const ManagementPage = () => {
                     <div className="w-full md:w-1/2 relative">
                         <div className="relative aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white group">
                             <Image
-                                src="/founder.jpeg"
+                                src="/sandeep_tiwari.jpeg"
                                 alt="Shri Sandeep H. Tiwari"
                                 fill
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
